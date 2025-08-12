@@ -1,0 +1,138 @@
+/* clerk-dashboard.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #003366;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar button:hover {
+  background-color: #145a9e;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  padding: 12px 15px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu li:hover,
+.menu li.active {
+  background: #00509e;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Table Styling */
+.card-table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.card-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card-table th,
+.card-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.card-table thead {
+  background-color: #00509e;
+  color: #fff;
+}
+
+.card-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Logout */
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #c82333;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #a71d2a;
+}
+.forward-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.forward-btn:hover {
+  background-color: #0056b3;
+}
